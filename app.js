@@ -1,9 +1,23 @@
-let dollars = [1, 5, 10, 3]
+let users = {
+  name: `Karl`,
+  email: `toom.karl42@gmail.com`,
+  password: `abc123`,
+  subscriptionStatus: `VIP`,
+  discordId: `toobal444`,
+  lessonsCompleted: [0, 1],
+};
 
-let cents = [];
-
-for (let i = 0; i < dollars.length; ++i ) {
-   cents.push(dollars[i] * 100)
+function register(user) {
+  users.push(user);
 }
 
-console.log(cents)
+register({
+   username:"karl",
+   email:"toom.karl42@gmail.com",
+   password:"abc123",
+   subscriptionStatus:"VIP",
+   discordId:"toobal444",
+   lessonsCompleted:[0, 1]
+  } );
+   
+  console.log(users)
