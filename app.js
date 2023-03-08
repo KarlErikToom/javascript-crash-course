@@ -1,5 +1,10 @@
-let str = "Frontend Simplified"
-
-for( let i = 0; i < str.length; i++){
-    console.log(str[i])
+function convertCelsiusToFahrenheit(celsius){
+    return celsius * 1.8 + 32
+    
 }
+
+console.log(convertCelsiusToFahrenheit(0))
+console.log(convertCelsiusToFahrenheit(10))
+console.log(convertCelsiusToFahrenheit(30))
+
+
