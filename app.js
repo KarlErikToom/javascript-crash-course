@@ -1,11 +1,16 @@
-let x;
-let y;
-let z;
 
-x= Number("3.14")
-y= String(3.14)
-z = Boolean("")
+let a;
+let b;
+let c;
 
-console.log(x, typeof x)
-console.log(y, typeof y)
-console.log(z, typeof z)
+document.getElementById("submitButton").onclick = function(){
+    a = document.getElementById("aTextBox").value;
+    a = Number(a);
+
+    b = document.getElementById("bTextBox").value;
+    b = Number(b);
+
+    c= Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+
+    document.getElementById("cLabel").innerHTML = "Side C :" + c;
+}
