@@ -1,7 +1,11 @@
-let username;
+let x;
+let y;
+let z;
 
-document.getElementById("myButton").onclick = function(){
-  username = document.getElementById("myText").value ;
-  console.log(username) 
-  document.getElementById("myLabel").innerHTML = "Hello " + username;
-}
+x= Number("3.14")
+y= String(3.14)
+z = Boolean("")
+
+console.log(x, typeof x)
+console.log(y, typeof y)
+console.log(z, typeof z)
