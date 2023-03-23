@@ -1,24 +1,34 @@
-/*let age = 67;
 
-if(age >=65){
-    console.log("u are old AF")
-}
-else if(age >=18){
-console.log("u are and adult")
-}
-else if(age < 0){
-    console.log("you arent born")
-}
-else{
-    console.log("u a child")
-}
-*/
+document.getElementById("myButton").onclick = function(){
 
-let online = false;
+    const myCheckBox = document.getElementById("myCheckBox")
+    const visaBtn = document.getElementById("visaBtn")
+    const mastercardBtn = document.getElementById("mastercardBtn")
+    const paypalBtn = document.getElementById("paypalBtn")
 
-if(online){
-    console.log("you are online")
-}
-else{
-    console.log("you offline")
+
+ if(myCheckBox.checked){
+    console.log("you are subbed");
+ }
+ else{
+    console.log("you are not subbed");
+ }
+
+
+ if (visaBtn.checked){
+    console.log("you paying with visa")
+ }
+
+ else if(mastercardBtn.checked){
+    console.log("you paying with mastercard")
+ }
+
+ else if(paypalBtn.checked){
+    console.log("you are paying with paypal")
+ }
+
+ else{
+    console.log("please choose a payment method")
+ }
+
 }
