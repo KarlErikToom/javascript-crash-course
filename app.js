@@ -1,10 +1,18 @@
 
-let temp =15;
-let sunny = true;
+let temp = 1;
+let sunny = false;
 
-if(temp > 0 && temp <30 && sunny){
-    console.log("the weather is good")
+
+if(!(temp >0)){
+    console.log("its cold outside")
 }
 else{
-    console.log("the weather is bad")
+    console.log("its warm outside")
+}
+
+if (!sunny){
+    console.log("its cloudy outside")
+}
+else{
+    console.log("its sunny outside")
 }
