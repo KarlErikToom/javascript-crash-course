@@ -1,19 +1,19 @@
-let userName ="toobal";
-let items = 3;
-let total = 65;
 
-//console.log("hello", userName);
-//console.log("you have", items, "items in ur cart");
-//console.log("your total is", total)
+let myNum = 54;
 
-//console.log(`hello ${userName}`);
-//console.log(`you have ${items} items in your cart`);
-//console.log(`your total is $${total}`)
+//myNum = myNum.toLocaleString("en-US");  US ENGLISH
 
-let text =
-`hello ${userName} <br>
-you have ${items} items in your cart<br>
-your total is $${total} <br>`;
+//myNum =myNum.toLocaleString("hi-IN"); HINDI
 
-//console.log(text)
-document.getElementById("myLabel").innerHTML = text;
+//myNum = myNum.toLocaleString("de-DE") Standard German
+
+//myNum = myNum.toLocaleString("en-US",{style: "currency", currency:"USD" } )
+//myNum = myNum.toLocaleString("hi-IN",{style: "currency", currency:"INR" } )
+//myNum = myNum.toLocaleString("de-DE",{style: "currency", currency:"EUR" } )
+
+
+//myNum = myNum.toLocaleString(undefined, {style: "percent"})
+
+
+myNum = myNum.toLocaleString(undefined, {style: "unit", unit: "celsius" })
+console.log(myNum)
