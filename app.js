@@ -1,16 +1,6 @@
 
-let area;
-let width;
-let height;
+checkWinner(false)
 
-width = window.prompt("wuidth");
-height = window.prompt("height");
-
-area= getArea(width, height);
-
-console.log("the area is:", area)
-
-function getArea(width, height){
-  let result = width * height;
-  return result;
+function checkWinner(win){
+    win ? console.log("you win") : console.log("you lose")
 }
