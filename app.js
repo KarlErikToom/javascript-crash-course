@@ -1,19 +1,17 @@
+const answer = Math.floor(Math.random() * 10 +1);
+let guesses = 0;
 
-let myNum = 54;
+document.getElementById("submitButton").onclick =function(){
+  let guess =  document.getElementById("guessField").value
+  guesses+=1;
 
-//myNum = myNum.toLocaleString("en-US");  US ENGLISH
-
-//myNum =myNum.toLocaleString("hi-IN"); HINDI
-
-//myNum = myNum.toLocaleString("de-DE") Standard German
-
-//myNum = myNum.toLocaleString("en-US",{style: "currency", currency:"USD" } )
-//myNum = myNum.toLocaleString("hi-IN",{style: "currency", currency:"INR" } )
-//myNum = myNum.toLocaleString("de-DE",{style: "currency", currency:"EUR" } )
-
-
-//myNum = myNum.toLocaleString(undefined, {style: "percent"})
-
-
-myNum = myNum.toLocaleString(undefined, {style: "unit", unit: "celsius" })
-console.log(myNum)
+  if (guess == answer){
+    alert(`${answer} is the #. It took you ${guesses} guesses`)
+  }
+  else if (guess < answer){
+    alert("Too small");
+  }
+  else{
+    alert("too large")
+  }
+}
