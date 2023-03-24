@@ -1,17 +1,16 @@
 
-startProgram();
+let area;
+let width;
+let height;
 
-function startProgram(){
-    let userName = "toobal";
-    let age =20;
+width = window.prompt("wuidth");
+height = window.prompt("height");
 
-    happyBirthday(userName, age)
-}
+area= getArea(width, height);
 
+console.log("the area is:", area)
 
-function happyBirthday(userName, age){
-    console.log("happy birtday")
-    console.log("happy birtday to you")
-    console.log("happy birtday", userName)
-    console.log("happy birtday sister you are", age)
+function getArea(width, height){
+  let result = width * height;
+  return result;
 }
