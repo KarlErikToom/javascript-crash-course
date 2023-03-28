@@ -1,12 +1,10 @@
-let fruits = ["apple", "orange", "banana"];
-//fruits[0] = "coconut"
+let prices = [5, 10, 15, 20];
 
-fruits.push("lemon") // adds element
-fruits.pop(); // removes last element
-fruits.unshift("mango");// adds element to beginning
-fruits.shift(); // removes ewlement from beginning
+/*for(let i = prices.length - 1; i >= 0; i -=1){
+console.log(prices[i]);
+}
+*/
 
-let length = fruits.length;
-let index = fruits.indexOf("orange")
-
-console.log(index)
+for(let price of prices){
+  console.log(price);
+}
