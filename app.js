@@ -1,15 +1,16 @@
 
-let fruits = ["apples", "oranges", "bananas"];
-let vegetables = ["carrots", "onions", "potatos"];
-let meats = ["eggs", "chicken", "fish"];
+/*//let userName = "karl toobal";
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+//console.log(...userName)
 
-let groceryList = [fruits, vegetables, meats];
+let maximum = Math.max(...numbers);
+console.log(maximum)
 
-groceryList[2][2] = "steak"
+*/
 
+let class1 = ["karl", "kaermo", "jaakop"]
+let class2 = ["jon", "max", "jason"];
 
-for(let list of groceryList){
-    for(let food of list){
-      console.log(food)
-    }
-}
+class1.push(...class2);
+
+console.log(...class1)
