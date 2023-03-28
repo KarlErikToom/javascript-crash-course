@@ -1,9 +1,15 @@
 
+let fruits = ["apples", "oranges", "bananas"];
+let vegetables = ["carrots", "onions", "potatos"];
+let meats = ["eggs", "chicken", "fish"];
 
-let fruits = ["banana", "apple", "orange", "mango"];
+let groceryList = [fruits, vegetables, meats];
 
-//fruits = fruits.sort();
-fruits = fruits.sort().reverse();
-for(let fruit of fruits){
-  console.log(fruit);
+groceryList[2][2] = "steak"
+
+
+for(let list of groceryList){
+    for(let food of list){
+      console.log(food)
+    }
 }
