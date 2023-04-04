@@ -1,15 +1,12 @@
 
-sum(2, 3, displayDOM);
+let students = ["karl", "kevin", "inge"]
+students.forEach(capitalize)
+students.forEach(print)
 
-function sum(x, y, callback){
-  let result = x + y;
-  callback(result);
+function capitalize(element, index, array){
+  array[index] = element[0].toUpperCase() + element.substring(1);
 }
 
-function displayConsole(output){
-  console.log(output)
-}
-
-function displayDOM(output){
- document.getElementById("myLabel").innerHTML = output;
+function print(element){
+  console.log(element)
 }
