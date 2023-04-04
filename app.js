@@ -1,12 +1,18 @@
 
-let students = ["karl", "kevin", "inge"]
-students.forEach(capitalize)
-students.forEach(print)
+let numbers = [1, 2, 3, 4, 5];
+let squares = numbers.map(square);
+let cubes = numbers.map(cube);
 
-function capitalize(element, index, array){
-  array[index] = element[0].toUpperCase() + element.substring(1);
+cubes.forEach(print)
+
+function square(element){
+  return Math.pow(element, 2);
 }
 
-function print(element){
+function cube (element){
+  return Math.pow(element, 3)
+}
+
+function print (element){
   console.log(element)
 }
