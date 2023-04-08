@@ -1,10 +1,17 @@
 
-let prices = [5, 10, 15, 20, 25, 5];
-let total = prices.reduce(checkOut);
+let grades = [100, 50, 90, 60, 70, 80];
 
-console.log(`the toal is $${total}`)
+grades = grades.sort(ascendingSort);
 
+grades.forEach(print);
 
-function checkOut(total, element){
-  return total + element;
+function descendingSort(x, y){
+return y - x;
+}
+function ascendingSort(x, y){
+  return x - y;
+  }
+
+function print(element){
+  console.log(element)
 }
