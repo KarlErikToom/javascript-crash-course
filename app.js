@@ -1,12 +1,10 @@
-let ages = [18, 10, 20, 34, 52];
-let adults = ages.filter(checkAge);
 
-adults.forEach(print);
+let prices = [5, 10, 15, 20, 25, 5];
+let total = prices.reduce(checkOut);
 
-function checkAge(element){
-  return element >= 18;
-}
+console.log(`the toal is $${total}`)
 
-function print(element){
-  console.log(element)
+
+function checkOut(total, element){
+  return total + element;
 }
