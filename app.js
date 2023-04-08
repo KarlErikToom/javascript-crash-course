@@ -1,25 +1,9 @@
 
-let count = 0;
 
-document.getElementById("increasebutton").onclick = function(){
-  count +=1;
-  document.getElementById("myLabel").innerHTML = count;
-}
-document.getElementById("decreasebutton").onclick = function(){
-  count -=1;
-  document.getElementById("myLabel").innerHTML = count;
-}
+let grades = [100, 50, 90, 60, 70];
+
+grades.sort((x, y)=> y - x);
+grades.forEach((element)=> console.log(element));
 
 
 
-
-
-/*
-function increaseCount(){
-count+=1;
-document.getElementById("myLabel").innerHTML = count;
-}
-function decreaseCount(){
-count-=1;
-document.getElementById("myLabel").innerHTML = count;
-}*/
