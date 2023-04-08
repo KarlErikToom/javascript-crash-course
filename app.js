@@ -1,17 +1,25 @@
 
-let grades = [100, 50, 90, 60, 70, 80];
+let count = 0;
 
-grades = grades.sort(ascendingSort);
-
-grades.forEach(print);
-
-function descendingSort(x, y){
-return y - x;
+document.getElementById("increasebutton").onclick = function(){
+  count +=1;
+  document.getElementById("myLabel").innerHTML = count;
 }
-function ascendingSort(x, y){
-  return x - y;
-  }
-
-function print(element){
-  console.log(element)
+document.getElementById("decreasebutton").onclick = function(){
+  count -=1;
+  document.getElementById("myLabel").innerHTML = count;
 }
+
+
+
+
+
+/*
+function increaseCount(){
+count+=1;
+document.getElementById("myLabel").innerHTML = count;
+}
+function decreaseCount(){
+count-=1;
+document.getElementById("myLabel").innerHTML = count;
+}*/
