@@ -1,12 +1,7 @@
-let cash = 30;
-let price = 40;
+let cash = 40
+let price = 40
+let isStoreOpen = true
 
-if (cash > price){
-    console.log(`here is your ${cash - price} dollars change`)
-}
-else if (cash === price){
-    console.log("exact amount")
-}
-else {
-    console.log(`you still owe ${price - cash} dollars`)
-}
+
+let str = cash >= price && isStoreOpen ? `give receipt` : `do not give receipt`
+console.log(str)
