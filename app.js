@@ -1,22 +1,15 @@
-/*let arr = [20, 30, 40, 50, 100,];
+/*let arr = [1, 4, 9, 16];
 
-let newArr = arr.filter(element => element < 50
-);
-
+let newArr = arr.map(element => undefined);
+;
 console.log(newArr);
 */
 
-/**
- * Filter out all the `FAIL` elements in an array
- *
- * @example
- * [`A+`, `A`, `FAIL`] => [`A+`, `A`]
- * [`FAIL`, `FAIL`, `B`] => [`B`]
- * [`FAIL`] => []
- */
+let dollars = [1, 5, 10, 3];
 
-let grades = [`A+`, `A`, `FAIL`];
+let cents = []
 
-let goodGrades = grades.filter(element =>element !== `FAIL`);
-;
-console.log(goodGrades);
+for (let i =0; i < dollars.length; i++){
+    cents.push(dollars[i] * 100)
+}
+console.log(cents)
