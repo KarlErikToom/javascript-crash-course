@@ -1,12 +1,12 @@
-/**
- * Concerting temperatures
- * 
- * Celsius-to-Fahrenheit formula:
- * 
- * F= C x 1.8 +32
- */
+let cash = 30;
+let price = 40;
 
-let celsius = 10;
-let fahrenheit = celsius * 1.8 + 32;
-
-console.log(fahrenheit)
+if (cash > price){
+    console.log(`here is your ${cash - price} dollars change`)
+}
+else if (cash === price){
+    console.log("exact amount")
+}
+else {
+    console.log(`you still owe ${price - cash} dollars`)
+}
